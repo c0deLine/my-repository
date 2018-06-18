@@ -1,0 +1,222 @@
+body{
+	font: 15px/1.5 Arial, Helvetica,sans-serif;
+	padding:0;
+	margin:0;
+	background-color:#f4f4f4;
+}
+/*global */
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+.button_1 {
+	height:38px;
+	background:#e8491d;
+	border:0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#ffffff;
+	text-transform: uppercase;
+}
+.dark {
+	padding:15px;
+	background:#35424a;
+	color:#ffffff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/*header*/
+header{
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#a8491d solid 3px;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+	background-position: fixed;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 10px 0 10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight, header .current a{
+	color:#e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+}
+
+/* Showcase */
+
+#showcase {
+	min-height:300px;
+	background-image:url('../img/background+.jpg');
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -150px;
+	background-color: #c0c0c0;
+	text-align:center;
+	color:#000000;
+	text-shadow: 2px 2px 4px grey;
+}
+
+#showcase h1 {
+	margin-top: 45px;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+#showcase p {
+	font-size: 20px;
+}
+
+/* newsletter */
+
+#newsletter {
+	padding: 10px;
+	color:#ffffff;
+	background:#35424a;
+}
+
+#newsletter h1 {
+ 	float:left;	
+}
+
+#newsletter form {
+	float:right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/* boxes*/
+
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float:left;
+	text-align:center;
+	width:30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width: 250px;
+	height: 250px;
+}
+
+/* Sidebar */
+aside#sidebar {
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+.quote input, .quote textarea {
+	width:50%;
+	padding:10px;
+}
+.contact {
+	position: center;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+	padding:1em;
+	background-image: url("../img/plumbing+.jpg"); 
+	background-position: center;
+	background-size: cover;
+	color:#ffffff;
+}
+.contact h3{
+	font-size: 30px;
+ }
+
+/* Main-col */
+article#main-col {
+	float:left;
+	width:65%;
+}
+/* Services */
+ul#services li {
+	list-style: none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+	header #branding, article#main-col, aside#sidebar, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, aside#contact .dark {
+		float:none;
+		text-align:center;
+		width:100%;
+		margin:0;
+}
+header {
+	padding-bottom:20px;
+}
+
+#showcase h1 {
+	margin-top:40px;
+}
+
+#newsletter button, #contact button {
+	display:block;
+	width:100%;
+}
+
+#newsletter form input[type="email"], .quote input, .quote textarea {
+	width:100%;
+	margin-bottom:5px;
+}
+
+#newsletter form input[type="email"], .quote input, .quote textarea {
+	width:100%;
+	margin-bottom:5px;
